@@ -4,6 +4,7 @@ import { IProduct } from './models/products';
 import { ProductsService } from './services/products.service';
 /*import { products as data } from './data/products';*/
 import { Observable, tap } from 'rxjs'
+import { ModalService } from './services/modal.service';
 
 @Component({
   selector: 'app-root',
@@ -17,9 +18,12 @@ export class AppComponent implements OnInit{
   /*products: IProduct[] = data */
   loading = false
   products$: Observable<IProduct[]>
+  term =''
 
-  constructor(private productsService: ProductsService){
-
+  constructor(
+    private productsService: ProductsService,
+    public modalService: ModalService
+    ){
   }
 
   ngOnInit(): void {
