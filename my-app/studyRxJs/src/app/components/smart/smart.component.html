@@ -1,0 +1,22 @@
+<app-dumb (delete)="onDelete($event)" [user]="newUser$ | async">
+
+</app-dumb> 
+
+<p>{{ value | async }}</p>
+<p>{{ value$ | async }}</p>
+
+<p>{{ name$ | async }}</p>
+
+<p *ngIf="name$ | async as name">
+    {{ name }}
+</p>
+
+<p *ngIf="user$ | async as user">
+    <span>User name is {{ user.name }}</span>
+    <span>User surname is {{ user.surname }}</span>
+</p>
+
+<div (click)="onItemClick(item, items)"
+    *ngFor="let item of array$ | async as items">
+    {{ item }}
+</div>
