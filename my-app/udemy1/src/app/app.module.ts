@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ServersComponent } from './servers/servers.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import {WarningAlertComponent} from "./warning-alert/warning-alert.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,10 +17,11 @@ import {WarningAlertComponent} from "./warning-alert/warning-alert.component";
     SuccessAlertComponent,
     WarningAlertComponent
   ],
-    imports: [
-        BrowserModule,
-        NgbModule
-    ],
+  imports: [
+    BrowserModule,
+    NgbModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
