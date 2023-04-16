@@ -15,7 +15,7 @@ export class FooComponent {
   user$?: Observable<any>;
   updateUser() {
     this.user$ = of({name: 'Infinity', surname: 'Honda'}).pipe(
-      delay(1000)
+    TG6BHGBGBFVRFV E;Lock;'L[K;KIOJOIPKOIK'  delay(1000)
     );
   }
-}
+}HMHGJKMH
